@@ -58,10 +58,10 @@ export default function ImageGeneratorProps({ generateImage }: ImageGeneratorPro
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-between p-8 m-5">
+    <div className="flex flex-col justify-between w-full">
       <main className="flex-1 flex flex-col items-center max-h-screen overflow-y-auto">
         {generatedImage && (
-          <div className="w-full max-w-2xl rounded-lg overflow-hidden shadow-lg relative group">
+          <div className="w-full max-w-3xl mt-10 rounded-lg overflow-hidden shadow-lg relative group">
             <img src={generatedImage} alt="Generated Image" className="object-cover w-full" />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <button 
@@ -134,7 +134,7 @@ export default function ImageGeneratorProps({ generateImage }: ImageGeneratorPro
         )}
       </main>
 
-      <footer className="w-full max-w-3xl mx-auto">
+      <footer className="w-full max-w-3xl mx-auto mb-5">
         <form onSubmit={handleSubmit} className="w-full">
           <div className="flex gap-2">
             <input
