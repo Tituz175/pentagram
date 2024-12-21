@@ -1,6 +1,6 @@
 "use server";
 
-const url = "http://localhost:3000/"
+const url = "https://pentagram-sandy.vercel.app/"
 
 export async function generateImage(text: string) {
   try {
